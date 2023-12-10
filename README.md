@@ -1,6 +1,6 @@
 # saitamasays
 
-A new Flutter project.
+An anime quote generation app. The app connects to an online API and retrieves quotes from all the best and the worst anime. It then allows for them to be saved for later and shared across different media platforms
 
 ## Getting Started
 
