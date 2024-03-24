@@ -93,6 +93,8 @@
 | ---                                                                                                      | ---                            
 | [pubspec.yaml](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/pubspec.yaml)                   | SaitamaSays is a Flutter project that aims to capture the essence of the famous hero Saitama from the One Punch Man series. The project leverages Flutter's capabilities to create an interactive and engaging experience for fans of the series.
 
+</details>
+
 <details closed><summary>main</summary>
 
 | File                                                                                 | Summary                         |
@@ -114,7 +116,7 @@ To use the `main.dart` file in your Flutter application, follow these steps:
 
 </details>
 
-<details closed><summary>lib/Database</summary>
+<details closed><summary>Database</summary>
 
 | File                                                                                                  | Summary                         |
 | ---                                                                                                   | ---                             |
@@ -135,15 +137,15 @@ To use the `Database.dart` file in your Flutter application, follow these steps:
 
 </details>
 
-<details closed><summary>lib/SaitamaPhrases</summary>
+<details closed><summary>SaitamaPhrases</summary>
 
-| File                                                                                                                    | Summary                         |
-| ---                                                                                                                     | ---                             |
-| [SaitamaPhrases.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/SaitamaPhrases/SaitamaPhrases.dart) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                                    | Summary        |
+| ---                                                                                                                     | ---            |
+| [SaitamaPhrases.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/SaitamaPhrases/SaitamaPhrases.dart) | Contians all of the phrases that are loaded into the app at startup|
 
 </details>
 
-<details closed><summary>lib.Colors</summary>
+<details closed><summary>Colors</summary>
 
 | File                                                                                            | Summary                         |
 | ---                                                                                             | ---                             |
@@ -162,7 +164,7 @@ To use the `SaitamaPhrases.dart` file in your Flutter application, follow these 
 
 </details>
 
-<details closed><summary>lib.Pages</summary>
+<details closed><summary>GetQuotes</summary>
 
 | File                                                                                                     | Summary                        
 | ---                                                                                                      | ---                            
@@ -183,6 +185,10 @@ To use the `GetQuotes.dart` file in your Flutter application, follow these steps
 1. Import the `GetQuotes.dart` file into your project.
 2. Use the `GetQuotes` widget to retrieve and display quotes in your UI.
 
+</details>
+
+<details closed><summary>ViewQuote</summary>
+	
 | File                                                                                                     | Summary                        
 | ---                                                                                                      | ---       
 | [ViewQuote.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/ViewQuote.dart)     | The `ViewQuote.dart` file provides a StatefulWidget called `viewQuote`, which allows users to view a single quote attributed to Saitama from the One Punch Man series. It displays the quote along with the corresponding anime and character in a glassmorphism-style UI.
@@ -199,6 +205,10 @@ To use the `ViewQuote.dart` file in your Flutter application, follow these steps
 1. Import the `ViewQuote.dart` file into your project.
 2. Use the `viewQuote` widget to display a single quote in your UI.
 
+</details>
+
+<details closed><summary>SavedQuotes</summary>
+	
 | File                                                                                                     | Summary                        
 | ---                                                                                                      | ---       
 | [SavedQuotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/SavedQuotes.dart) | The project consists of several Dart files organized into different directories:
@@ -233,6 +243,9 @@ To use this project, follow these steps:
 - View saved quotes with the option to delete or share them.
 - View individual quotes in detail, including the anime and character associated with each quote.
 
+</details>
+
+<details closed><summary>MainLayout</summary>
 
 | File                                                                                                     | Summary                        
 | ---                                                                                                      | ---       
@@ -251,17 +264,58 @@ To use the `MainLayout` widget in your Flutter application, follow these steps:
 
 | File                                                                                              | Summary                         |
 | ---                                                                                               | ---                             |
-| [Quotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Services/Quotes.dart) | <code>► INSERT-TEXT-HERE</code> |
+| [Quotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Services/Quotes.dart) | This Dart code allows you to generate random quotes from an API. It utilizes the animechan API to fetch quotes related to anime characters and displays them. The code also includes functionality to manipulate and store the quotes.
+
+## Features
+- Fetch random quotes from the animechan API.
+- Store and manipulate quote data locally.
+- Clean and maintainable code structure.
+
+## Usage
+To use this code, you can incorporate it into your Dart projects. You can utilize the `Quoter` class to fetch random quotes and manipulate them according to your requirements.
 
 </details>
 
-<details closed><summary>lib.Widgets</summary>
+<details closed><summary>SideMenu</summary>
 
-| File                                                                                                       | Summary                         |
-| ---                                                                                                        | ---                             |
-| [SideMenu.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/SideMenu.dart)       | <code>► INSERT-TEXT-HERE</code> |
-| [QuoteCard.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/QuoteCard.dart)     | <code>► INSERT-TEXT-HERE</code> |
-| [QuoteWindow.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/QuoteWindow.dart) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                       | Summary                     |
+| ---                                                                                                        | ---                         |
+| [SideMenu.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/SideMenu.dart)       | The `NavDrawer` widget is designed to be used as a side menu in a Flutter application. It includes options for navigation and can be customized to fit the design of the application.
+
+## Features
+- Displays a drawer with navigation options.
+- Customizable design with support for icons and text.
+- Easily integrate into Flutter applications.
+
+## Usage
+To use this widget, incorporate it into your Flutter application where you need a side menu for navigation. The `NavDrawer` widget provides options for searching quotes and accessing saved quotes.
+
+</details>
+
+<details closed><summary>QuoteCard</summary>
+
+| File                                                                                                       | Summary                     |
+| ---                                                                                                        | ---                         |
+| [QuoteCard.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/QuoteCard.dart)     | The `QuoteCard` widget is a customizable Flutter widget that displays a card containing a quote, character name, anime name, and options for sharing and deleting the quote. It provides an aesthetically pleasing design with a blurred background and gradient overlay.
+
+## Usage
+To use this widget, simply include it in your Flutter project and pass the required parameters (`quote` and `index`). Customize the widget according to your project's design requirements.
+
+</details>
+
+<details closed><summary>QuoteWindow</summary>
+
+| File                                                                                                       | Summary                     |
+| ---                                                                                                        | ---                         |
+| [QuoteWindow.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Widgets/QuoteWindow.dart) | The `QuoteWindow` widget is designed to display a quote along with its associated details in a stylized window. It utilizes various Flutter widgets to achieve a visually appealing layout.
+
+## Features
+- Display anime, character, and quote in a styled window.
+- Customizable design with support for dynamic colors.
+- Utilizes Google Fonts for enhanced typography.
+
+## Usage
+To use this widget, incorporate it into your Flutter application where you need to display a quote window. Pass the `Quoter` object representing the quote along with its index to the `QuoteWindow` widget.
 
 </details>
 
