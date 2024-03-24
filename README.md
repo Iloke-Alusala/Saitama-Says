@@ -87,29 +87,55 @@
 
 ##  Modules
 
-<details closed><summary>.</summary>
+<details closed><summary>pubspec.yaml</summary>
 
-| File                                                                                                     | Summary                         |
-| ---                                                                                                      | ---                             |
-| [pubspec.yaml](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/pubspec.yaml)                   | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                     | Summary                        
+| ---                                                                                                      | ---                            
+| [pubspec.yaml](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/pubspec.yaml)                   | SaitamaSays is a Flutter project that aims to capture the essence of the famous hero Saitama from the One Punch Man series. The project leverages Flutter's capabilities to create an interactive and engaging experience for fans of the series.
 
-<details closed><summary>lib</summary>
+<details closed><summary>main</summary>
 
 | File                                                                                 | Summary                         |
 | ---                                                                                  | ---                             |
-| [main.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/main.dart) | <code>► INSERT-TEXT-HERE</code> |
+| [main.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/main.dart) | 
+The `main.dart` file initializes a Flutter application that brings to life the words of the most powerful Hero who does his job for fun. It randomly selects a Saitama phrase to display upon app launch and provides navigation to different pages for exploring more phrases or viewing saved quotes.
+
+### Features
+
+- **Random Saitama Phrases**: Displays a randomly selected Saitama phrase upon app launch.
+- **Navigation**: Allows users to navigate between different pages for exploring more phrases or viewing saved quotes.
+
+## Usage
+
+To use the `main.dart` file in your Flutter application, follow these steps:
+
+1. Import the `main.dart` file into your project.
+2. Initialize the Flutter application using the `MyApp` widget defined in `main.dart`.
 
 </details>
 
-<details closed><summary>lib.Database</summary>
+<details closed><summary>lib/Database</summary>
 
 | File                                                                                                  | Summary                         |
 | ---                                                                                                   | ---                             |
-| [Database.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Database/Database.dart) | <code>► INSERT-TEXT-HERE</code> |
+| [Database.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Database/Database.dart) | The `Database.dart` file provides functionality for creating, reading, updating, and deleting quotes stored in a local SQLite database. It defines a class called `QuoteDatabase` with methods for initializing the database, creating tables, inserting new quotes, checking if a quote exists in the database, retrieving quotes, updating quote details, and deleting quotes.
+
+### Features
+
+- **SQLite Database**: Utilizes the `sqflite` package to interact with a local SQLite database on the device.
+- **CRUD Operations**: Supports Create, Read, Update, and Delete operations for managing quotes.
+- **Data Validation**: Implements methods to check if a quote already exists in the database before insertion.
+
+## Usage
+
+To use the `Database.dart` file in your Flutter application, follow these steps:
+
+1. Import the `Database.dart` file into your project.
+2. Initialize the `QuoteDatabase` class to perform database operations.
 
 </details>
 
-<details closed><summary>lib.SaitamaPhrases</summary>
+<details closed><summary>lib/SaitamaPhrases</summary>
 
 | File                                                                                                                    | Summary                         |
 | ---                                                                                                                     | ---                             |
@@ -121,18 +147,103 @@
 
 | File                                                                                            | Summary                         |
 | ---                                                                                             | ---                             |
-| [Colors.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Colors/Colors.dart) | <code>► INSERT-TEXT-HERE</code> |
+| [Colors.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Colors/Colors.dart) | The `SaitamaPhrases.dart` file provides a class called `SaitamaLines` with a list of Saitama's phrases. Each phrase is represented as a string and can be accessed from the `lines` list.
+
+### Features
+
+- **Saitama's Phrases**: Contains a collection of Saitama's memorable phrases from the One Punch Man series.
+
+## Usage
+
+To use the `SaitamaPhrases.dart` file in your Flutter application, follow these steps:
+
+1. Import the `SaitamaPhrases.dart` file into your project.
+2. Access the `lines` list from the `SaitamaLines` class to retrieve Saitama's phrases.
 
 </details>
 
 <details closed><summary>lib.Pages</summary>
 
-| File                                                                                                     | Summary                         |
-| ---                                                                                                      | ---                             |
-| [GetQuotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/GetQuotes.dart)     | <code>► INSERT-TEXT-HERE</code> |
-| [ViewQuote.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/ViewQuote.dart)     | <code>► INSERT-TEXT-HERE</code> |
-| [SavedQuotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/SavedQuotes.dart) | <code>► INSERT-TEXT-HERE</code> |
-| [MainLayout.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/MainLayout.dart)   | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                     | Summary                        
+| ---                                                                                                      | ---                            
+
+| [GetQuotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/GetQuotes.dart)     | The `GetQuotes.dart` file provides a StatefulWidget called `GetQuotes`, which allows users to retrieve random quotes attributed to Saitama from the One Punch Man series. It displays quotes in a carousel slider and provides options to save quotes to a local database. Additionally, it handles internet connectivity issues and displays appropriate messages to the user.
+
+### Features
+
+- **Random Quote Retrieval**: Retrieves random quotes attributed to Saitama.
+- **Carousel Slider**: Displays quotes in a carousel slider for easy browsing.
+- **Quote Saving**: Allows users to save quotes to a local database.
+- **Internet Connectivity Handling**: Displays messages to the user in case of internet connectivity issues.
+
+## Usage
+
+To use the `GetQuotes.dart` file in your Flutter application, follow these steps:
+
+1. Import the `GetQuotes.dart` file into your project.
+2. Use the `GetQuotes` widget to retrieve and display quotes in your UI.
+
+| File                                                                                                     | Summary                        
+| ---                                                                                                      | ---       
+| [ViewQuote.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/ViewQuote.dart)     | The `ViewQuote.dart` file provides a StatefulWidget called `viewQuote`, which allows users to view a single quote attributed to Saitama from the One Punch Man series. It displays the quote along with the corresponding anime and character in a glassmorphism-style UI.
+
+### Features
+
+- **Quote Display**: Displays a single quote along with the corresponding anime and character.
+- **Glassmorphism UI**: Uses the glassmorphism effect to create a visually appealing UI.
+
+## Usage
+
+To use the `ViewQuote.dart` file in your Flutter application, follow these steps:
+
+1. Import the `ViewQuote.dart` file into your project.
+2. Use the `viewQuote` widget to display a single quote in your UI.
+
+| File                                                                                                     | Summary                        
+| ---                                                                                                      | ---       
+| [SavedQuotes.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/SavedQuotes.dart) | The project consists of several Dart files organized into different directories:
+
+- **lib**: Contains the main Dart files for the project.
+  - **main.dart**: Entry point of the application.
+  - **Database**: Directory containing Dart files related to database management.
+    - **Database.dart**: Defines a database for storing quotes.
+  - **Colors**: Directory containing Dart files defining colors used in the application.
+  - **Services**: Directory containing Dart files providing services for fetching and managing quotes.
+  - **SaitamaPhrases**: Directory containing Dart files with a list of Saitama quotes.
+  - **Pages**: Directory containing Dart files defining various pages of the application.
+    - **GetQuotes.dart**: Defines a page for displaying random quotes.
+    - **SavedQuotes.dart**: Defines a page for displaying saved quotes.
+    - **ViewQuote.dart**: Defines a page for viewing a single quote in detail.
+  - **Widgets**: Directory containing Dart files defining reusable widgets.
+    - **QuoteCard.dart**: Defines a widget for displaying a card with quote details.
+    - **QuoteWindow.dart**: Defines a widget for displaying a window with quote details.
+
+## Usage
+
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open the project in your preferred Flutter development environment.
+3. Run the project using a compatible device or emulator.
+
+## Features
+
+- Display random quotes attributed to Saitama.
+- Save favorite quotes for later viewing.
+- View saved quotes with the option to delete or share them.
+- View individual quotes in detail, including the anime and character associated with each quote.
+
+
+| File                                                                                                     | Summary                        
+| ---                                                                                                      | ---       
+| [MainLayout.dart](https://github.com/Iloke-Alusala/Saitama-Says/blob/master/lib/Pages/MainLayout.dart)   | The `MainLayout` widget consists of a `BottomNavigationBar` for navigation and an `IndexedStack` to manage the visibility of the different pages.
+
+## Usage
+
+To use the `MainLayout` widget in your Flutter application, follow these steps:
+
+1. Import the `MainLayout.dart` file into your project.
+2. Use the `MainLayout` widget as the main layout of your application, passing the required parameters as needed.
 
 </details>
 
